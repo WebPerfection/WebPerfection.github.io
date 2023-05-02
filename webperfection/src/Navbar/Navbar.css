@@ -1,7 +1,8 @@
 .main{
-    background-color: #dcd7d9;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     position: sticky;
     top: 0;
+    
     z-index: 9;
 }
 .Img-div{
@@ -14,6 +15,19 @@
 } */
 .Img-div>div>h3,.Img-div>div>p{
     font-family: Raleway;
+}
+.vis >div a{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+    color: black;
+    
+    
+    
+}
+.vis >div{
+    padding: 10px;
+    
 }
 .Img-div>div>h3{
     font-size: 24px;
@@ -32,26 +46,27 @@
     width: 90%;
     display: flex;
     justify-content: space-between;
-    transition:  1s;
+    
 }
 .Button-div{
     display: flex;
     gap: 30px;
     margin-top: 10px;
     align-items: center;
-    transition:  1s;
+    animation: fade_in_show 1s
 }
 .Button-div>a{
     font-size: 20px;
     font-weight: 500;
     text-decoration: none;
     color: black;
-    
+    transition: 3s;
 }
 .Button-div>a:hover{
     cursor: pointer;
     color: #d2c776;
-    text-decoration: underline;
+    /* text-decoration: underline; */
+    transition: .8s;
 }
 .Button-div>a:active{
     color: #d2c776;
@@ -60,31 +75,98 @@
 .h2{
     display: none;
     align-items: center;
+   
+   
+
     /* font-size: 23px; */
+}
+.h2 > h2{
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+}
+.h21 > h2{
+    border: 1px solid black;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    
+}
+.bg{
+    vertical-align:middle
 }
 .h21{
     display: none;
     align-items: center;
-    
 }
 .smallscreen{
     position: relative;
     float: right;
-    width: 150px;
+    width: 0px;
     display: none;
     height: 100vh;
-    background-color: teal;
-    transition:all 1s linear ;
+    background-color: #dcd7d9;
+    animation: fade_out_hide 1s;
+    
+}
+.vis{
+    position: relative;
+    float: right;
+    width: 200px;
+    height: 100vh;
+    
+    display: block;
+    background-color: #dcd7d9;
+    animation: fade_in_show 1s
+}
+@keyframes fade_in_show {
+    from {
+         opacity: 0;
+         transform: scaleX(0)
+    }
+
+   to {
+         opacity: 1;
+         transform: scaleX(1)
+    }
+}
+@keyframes fade_out_hide {
+    from {
+        opacity: 0;
+        transform: scaleX(0)
+   }
+
+  to {
+        opacity: 1;
+        transform: scaleX(1)
+   }
 }
 @media only screen and (max-width: 699px) {
     .h2 {
       display: flex;
+      animation: show 1s;
     }
+    @keyframes show {
+        from {
+             opacity: 0;
+             transform: scaleX(0)
+        }
+    
+       to {
+             opacity: 1;
+             transform: scaleX(1)
+        }
+    }
+    
     .Button-div{
         display: none;
     }
     .h21{
         display: flex;
+        animation: fade_in_show 1s
+        
     }
     .smallscreen{
         display: block;
@@ -94,4 +176,10 @@
     .Img-div>div{
         display: none;
     }
+  }
+
+  @media only screen and (min-width: 700px){
+  .vis{
+    display: none;
+  }
   }

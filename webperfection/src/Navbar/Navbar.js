@@ -21,13 +21,13 @@ export default function Navbar() {
         {ham ? (
           <div className="h21">
             <h2 onClick={() => setHam(!ham)}>
-              <FaArrowRight />
+              <FaArrowRight className="bg" />
             </h2>
           </div>
         ) : (
           <div className="h2">
-            <h2 onClick={() => setHam(!ham)} >
-              <GiHamburgerMenu />
+            <h2 onClick={() => setHam(!ham)}  >
+              <GiHamburgerMenu className="bg" />
             </h2>
           </div>
         )}
@@ -40,10 +40,16 @@ export default function Navbar() {
         </div>
       </div>
     </div>
-    {ham && <div className="smallscreen">
-    <Link to="/">Home</Link>
+    {ham && <div className={ham ? "vis":"smallscreen"} >
+          <div>
+          <Link to="/">Home</Link>
+          </div>
+          <div>
           <Link to="/">About us</Link>
+          </div>
+          <div>
           <Link to="/">Contect</Link>
+          </div>
     </div>}
     </>
   );
