@@ -86,4 +86,28 @@ return `
     </div>
 </div>`;
 }
-export {footer};
+
+let preloader=()=>{
+    return `<div class="preloader-body">
+    <div class="cssload-bell">
+        <div class="cssload-circle">
+            <div class="cssload-inner"></div>
+        </div>
+        <div class="cssload-circle">
+            <div class="cssload-inner"></div>
+        </div>
+        <div class="cssload-circle">
+            <div class="cssload-inner"></div>
+        </div>
+        <div class="cssload-circle">
+            <div class="cssload-inner"></div>
+        </div>
+        <div class="cssload-circle">
+            <div class="cssload-inner"></div>
+        </div>
+        
+    </div>
+    <h6>WebPerfection</h6>
+</div>`
+}
+export {footer,preloader};
