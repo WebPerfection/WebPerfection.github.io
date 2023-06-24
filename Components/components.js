@@ -38,7 +38,7 @@ return `
                     <li>
                         <div class="unit unit-spacing-sm flex-column flex-md-row">
                             <div class="unit-left"><span class="icon mdi mdi-phone"></span></div>
-                            <div class="unit-body"><a class="link-black" href="tel:#">+918888888888</a>
+                            <div class="unit-body"><a class="link-black" href="tel:+917084017971">+918888888888</a>
                             </div>
                         </div>
                     </li>
@@ -46,7 +46,7 @@ return `
                         <div class="unit unit-spacing-sm flex-column flex-md-row">
                             <div class="unit-left"><span class="icon mdi mdi-email-outline"></span></div>
                             <div class="unit-body"><a class="link-black"
-                                    href="mailto:#">WebPerfection2023@gmail.com</a></div>
+                                    href="mailto:WebPerfection2023@gmail.com">WebPerfection2023@gmail.com</a></div>
                         </div>
                     </li>
                 </ul>
@@ -110,4 +110,5 @@ let preloader=()=>{
     <h6>WebPerfection</h6>
 </div>`
 }
+
 export {footer,preloader};

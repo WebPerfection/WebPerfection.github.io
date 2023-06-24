@@ -15588,7 +15588,7 @@ html.rd-navbar-fixed-linked .page {
     left: 50%;
     transform: translateX(-50%);
     background-color: #6a9fdf;
-    max-width: 425px;
+    /* max-width: 425px; */
     width: 100%;
     z-index: 1;
 }
