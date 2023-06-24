@@ -299,6 +299,31 @@ ol {
     margin: 0;
 }
 
+
+.icon-sec ul {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4em 0;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    gap: 20px;
+    
+}
+.icon-sec li{
+   width: 200px;
+   display: flex;
+   height: 200px;
+   flex-direction: column;
+   gap: 20px;
+   justify-content: center;
+   align-items: center;
+   padding: 20px;
+   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px
+}
 ul li,
 ol li {
     display: block;
