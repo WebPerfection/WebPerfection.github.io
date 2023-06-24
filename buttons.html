@@ -77,25 +77,6 @@
         alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
   </div>
   <div class="preloader">
-    <div class="preloader-body">
-      <div class="cssload-bell">
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-        <div class="cssload-circle">
-          <div class="cssload-inner"></div>
-        </div>
-      </div>
-    </div>
   </div>
   <div class="page">
     <!-- Page Header-->
@@ -5158,9 +5139,9 @@
   <div class="snackbars" id="form-output-global"></div>
   <script src="js/core.min.js"></script>
   <script src="js/script.js"></script>
-  <script type="module">
-    import {footer} from './Components/components.js'
+  <script type="module">import {footer,preloader} from './Components/components.js'
     document.querySelector("footer").innerHTML=footer();
+    document.querySelector(".preloader").innerHTML=preloader();
 </script>
   <script>
     function copyToClipboard(text) {

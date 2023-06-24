@@ -38,25 +38,6 @@
                     alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a>
         </div>
         <div class="preloader">
-            <div class="preloader-body">
-                <div class="cssload-bell">
-                    <div class="cssload-circle">
-                        <div class="cssload-inner"></div>
-                    </div>
-                    <div class="cssload-circle">
-                        <div class="cssload-inner"></div>
-                    </div>
-                    <div class="cssload-circle">
-                        <div class="cssload-inner"></div>
-                    </div>
-                    <div class="cssload-circle">
-                        <div class="cssload-inner"></div>
-                    </div>
-                    <div class="cssload-circle">
-                        <div class="cssload-inner"></div>
-                    </div>
-                </div>
-            </div>
         </div>
         <div class="page">
             <!-- Page Header-->
@@ -393,8 +374,9 @@
         <script src="js/core.min.js"></script>
         <script src="js/script.js"></script>
         <script type="module">
-            import {footer} from './Components/components.js'
-            document.querySelector("footer").innerHTML=footer();
+            import {footer,preloader} from './Components/components.js'
+        document.querySelector("footer").innerHTML=footer();
+        document.querySelector(".preloader").innerHTML=preloader();
         </script>
         <!-- Google Tag Manager --><noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-P9FT69" height="0"
                 width="0" style="display:none;visibility:hidden"></iframe></noscript>
