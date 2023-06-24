@@ -1,6 +1,6 @@
 
-let footer=()=>{
-return `
+let footer = () => {
+    return `
 <div class="footer-classic-body section-lg">
     <div class="container">
         <div class="row row-40 row-md-50 justify-content-xl-between">
@@ -87,7 +87,7 @@ return `
 </div>`;
 }
 
-let preloader=()=>{
+let preloader = () => {
     return `<div class="preloader-body">
     <div class="cssload-bell">
         <div class="cssload-circle">
@@ -111,4 +111,6 @@ let preloader=()=>{
 </div>`
 }
 
-export {footer,preloader};
+
+
+export { footer, preloader };
