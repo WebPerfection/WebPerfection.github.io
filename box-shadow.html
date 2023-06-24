@@ -796,12 +796,15 @@
                 // Get the box shadow value
                 const boxShadow = element.style.boxShadow;
 
-                // Create a temporary textarea element to hold the box shadow value
+                // Create the modified box shadow value with "box-shadow" prefix
+                const modifiedBoxShadow = 'box-shadow: ' + boxShadow;
+
+                // Create a temporary textarea element to hold the modified box shadow value
                 const textarea = document.createElement('textarea');
-                textarea.value = boxShadow;
+                textarea.value = modifiedBoxShadow;
                 document.body.appendChild(textarea);
 
-                // Copy the box shadow value from the textarea
+                // Copy the modified box shadow value from the textarea
                 textarea.select();
                 document.execCommand('copy');
 
