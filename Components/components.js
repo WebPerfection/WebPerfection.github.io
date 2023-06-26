@@ -1,6 +1,5 @@
-
 let footer = () => {
-    return `
+  return `
 <div class="footer-classic-body section-lg">
     <div class="container">
         <div class="row row-40 row-md-50 justify-content-xl-between">
@@ -85,10 +84,10 @@ let footer = () => {
         </div>
     </div>
 </div>`;
-}
+};
 
 let preloader = () => {
-    return `<div class="preloader-body">
+  return `<div class="preloader-body">
     <div class="cssload-bell">
         <div class="cssload-circle">
             <div class="cssload-inner"></div>
@@ -107,10 +106,9 @@ let preloader = () => {
         </div>
         
     </div>
-    <h6>WebPerfection</h6>
-</div>`
-}
-
-
+    
+    <img class="brand-logo-dark" style="width:150px;margin-top: -8px" src="http://127.0.0.1:5500/images/logo-default-93-27.png" alt="" />
+</div>`;
+};
 
 export { footer, preloader };
