@@ -107,7 +107,7 @@ let preloader = () => {
         
     </div>
     
-    <img class="brand-logo-dark" style="width:150px;margin-top: -8px" src="http://127.0.0.1:5500/images/logo-default-93-27.png" alt="" />
+    <img class="brand-logo-dark" style="width:150px;margin-top: -8px" src="https://webperfection.github.io/images/logo-default-93-27.png" alt="" />
 </div>`;
 };
 
