@@ -6,7 +6,7 @@ const options = {
   }
 };
 
-// fetch('https://api.iconfinder.com/v4/iconsets',options)
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .catch(err => console.error(err));
+fetch('https://api.iconfinder.com/v4/iconsets',options)
+  .then(response => response.json())
+  .then(response => console.log(response))
+  .catch(err => console.error(err));
